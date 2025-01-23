@@ -1,0 +1,30 @@
+.icon i {
+    color: #1d2864;
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  
+  .service-info {
+    margin-bottom: 20px;
+  }
+  
+  .icon-info h4 {
+    padding-bottom: 15px;
+  }
+  
+  .icon-info p {
+    font-size: 15px !important;
+  }
+  .contenServices{
+    /* display: grid;
+    grid-template-columns: 350px auto; */
+  }
+  .servicios{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+  .titleSeccion{
+    width: 700px;
+  }

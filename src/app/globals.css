@@ -2,12 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -15,13 +10,656 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.paddingSeccion{
+  padding: 0 10rem ;
+}
+
+
+/**/
+/* CSS Completo con ajustes para el menú responsivo */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+  color: #000000;
+  font-size: 16px;
+  /* Ajusté el tamaño de fuente, ya que el valor 300 es demasiado grande */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+}
+
+p {
+  justify-content: center;
+  /* No se aplica directamente en párrafos, revisa su uso 
+} */
+
+.section-left-right {
+  padding: 0 10%;
+  
+}
+.section-padding {
+  padding: 60px 10%;
+}
+
+h2 {
+  line-height: 20px;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+hr.botm-line {
+  height: 3px;
+  width: 60px;
+  background: #ffb737;
+  position: relative;
+  border: 0;
+  margin: 20px 0;
+}
+
+/***************************************
+NAVEGADOR
+***************************************/
+/* Estilo para el navbar */
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-collapse {
+  background-color: white;
+}
+
+.navbar-default {
+  background-color: rgb(3, 33, 88);
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.navbar-brand {
+  font-family: 'Chewy', cursive;
+  font-size: 32px;
+  color: #0d588a;
+  /* Cambia el color según tu diseño */
+}
+
+.navbar-brand img {
+  padding-top: 0;
+}
+
+/* Estilo para el menú principal */
+.main-menu {
+  margin-left: 200PX;
+  /* Ajusta este valor según sea necesario */
+  transition: margin-left 0.3s;
+}
+
+/* Estilo para el botón de login */
+
+.login-btn {
+  color: #ffffff !important;
+  /* Cambia el color del texto a blanco */
+  background-color: rgb(3, 33, 88) !important;
+  /* Cambia el color de fondo según tu preferencia */
+  border: 1px solid white;
+  /* Añade un borde sólido */
+  border-radius: 4px;
+  /* Agrega esquinas redondeadas */
+  transition: all 0.3s;
+  display: inline-block;
+  /* Asegura que el botón se muestre en línea */
+  padding: 7px 20px;
+  /* Ajusta el espaciado interno del botón */
+  text-align: center;
+  /* Centra el texto dentro del botón */
+  text-decoration: none;
+  /* Elimina el subrayado del enlace */
+  height: auto;
+  /* Usa altura automática para ajustar al contenido */
+  line-height: 1;
+  /* Ajusta la altura de línea para centrar el texto verticalmente */
+}
+
+.login-btn:hover {
+  color: #000000 !important;
+  font-style: unset;
+  background-color: #ffffff !important;
+  /* Cambia el color de fondo al pasar el ratón por encima */
+  border-color: #000000 !important;
+  /* Cambia el color del borde al pasar el ratón por encima */
+  box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.923);
+  /* Aumenta la sombra al pasar el ratón por encima */
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* Estilos responsivos cuando se achica la pantalla */
+  .navbar-collapse {
+      background: rgba(162, 247, 154, 0.945);
+  }
+
+  .main-menu {
+      margin-left: 0;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 1768px) {
+  .navbar-collapse {
+      background: rgb(255, 252, 252);
+  }
+
+}
+
+.top-nav-collapse {
+  padding: 0;
+  border-bottom: 1.5px solid rgb(168, 167, 167);
+  box-shadow: 1px 0px 6px 1px rgba(0, 0, 0, 0.923);
+  /* Aumenta la sombra al pasar el ratón por encima */
+  border-style: ridge;
+  background: rgba(255, 255, 255, 0.993);
+}
+
+.block {
+  display: block;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #e9e9e9;
+  text-transform: uppercase;
+  background-color: rgb(3, 33, 88);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(3, 33, 88, 0.719);
+}
+
+.affix {
+  background-color: #8f1010 !important;
+}
+
+.affix .navbar-nav>li>a:hover,
+.affix .navbar-nav>li>a:focus {
+  background-color: rgb(133, 24, 109) !important;
+}
+
+/***************************************
+Login
+***************************************/
+.login-btn {
+  color: #fff;
+  background-color: rgb(3, 33, 88);
+  border-radius: 9px;
+  position: relative;
+}
+
+
+.login-btn:hover {
+  background-color: #0056b3;
+  border-color: #419a2f;
+}
+
+/***************************************
+Banner y secciones
+***************************************/
+/* #banner {
+  background: url('../images/fondobanner.jpg') no-repeat fixed;
+  background-size: cover;
+  min-height: 650px;
+  position: relative;
+} */
+
+.bg-color {
+  background-color: rgba(193, 195, 197, 0.836);
+  min-height: 1000px;
+}
+
+.banner-info {
+  padding-top: 300px;
+}
+
+.banner-text {
+  color: #000000;
+}
+
+.banner-text h1 {
+  font-family: 'Candal', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: rgb(3, 33, 88);
+}
+
+.btn-appoint,
+.btn-appoint:hover,
+.btn-appoint:focus {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: #1d2a64;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.overlay-detail a i {
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  font-size: 38px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.text-primary i {
+  padding-top: 8px;
+  display: inline-block;
+}
+
+/***************************************
+Servicios
+***************************************/
+.icon i {
+  color: #1d2864;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.service-info {
+  margin-bottom: 20px;
+}
+
+.icon-info h4 {
+  padding-bottom: 15px;
+}
+
+.icon-info p {
+  font-size: 15px !important;
+}
+
+/***************************************
+CTA-1
+***************************************/
+.schedule-tab {
+  background-color: #1d2864;
+  float: left;
+}
+
+.medi-info {
+  border-right: 1px solid #fff;
+}
+
+.medi-info,
+.time-info {
+  padding: 20px;
+  color: #fff;
+}
+
+.medi-info h3,
+.time-info h3 {
+  padding-bottom: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.medi-info-btn,
+.medi-info-btn:hover,
+.medi-info-btn:focus {
+  margin: 15px 0 5px;
+  display: inline-block;
+  border: solid white 2px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+td {
+  border: 0 solid #ededed;
+  border-top: 1px solid rgba(216, 216, 216, 0.5);
+  padding: 6px 10px 6px 0;
+}
+
+.medi-info,
+.time-info {
+  font-size: 14px;
+}
+
+/***************************************
+Acerca de
+***************************************/
+#about {
+  background-color: rgba(238, 238, 238, 0.15);
+}
+
+.lg-line {
+  line-height: 1.4;
+  font-size: 28px;
+}
+
+.more-features-box-text-icon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  /* padding-top: 6px; */
+  background: #1d2864;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-features-box-text-icon i {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.more-features-box-text-description {
+  margin-left: 80px;
+  margin-bottom: 35px;
+}
+
+.sec-para {
+  padding-bottom: 10px;
+}
+
+/***************************************
+Equipo médico
+***************************************/
+.thumbnail {
+  border-radius: 0;
+}
+
+.caption h3 {
+  padding-bottom: 5px;
+}
+
+.caption p {
+  padding-bottom: 10px;
+}
+
+/***************************************
+CTA -2
+***************************************/
+#cta-2 {
+  background-color: #d6d7d869;
+  padding: 60px 0;
+}
+
+#cta-2 .container {
+  margin-bottom: 30px;
+}
+
+#cta-2 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cta-2 .section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#cta-2 p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/***************************************
+Contáctenos
+***************************************/
+.space {
+  margin-top: 40px;
+}
+
+.btn-form,
+.btn-form:hover,
+.btn-form:focus {
+  background-color: #1d2864;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.br-radius-zero {
+  border-radius: 0;
+}
+
+.form-control {
+  height: 40px;
+}
+
+.validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+}
+
+#sendmessage {
+  color: green;
+  border: 1px solid green;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#sendmessage.show,
+#errormessage.show,
+.show {
+  display: block;
+}
+
+
+/***************************************
+          footer
+          ***************************************/
+#footer {
+  background-color: #325C6A;
+
+}
+
+.white {
+  color: rgb(3, 3, 3);
+}
+
+.ftr-tle {
+  height: 50px;
+}
+
+.info-sec {
+  color: #fff;
+}
+
+.quick-info li i {
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: left;
+}
+
+.social-icon li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.bglight-blue {
+  background-color: #3498DB;
+}
+
+.bgws {
+  background-color: #3bb84b;
+}
+
+.bgig {
+  background-color: #fa3390;
+}
+
+.bglight-blue {
+  background-color: #169bd8;
+}
+
+.top-footer {
+  padding: 40px 0px;
+  border-bottom: 1px solid rgba(209, 29, 29, 0.219);
+}
+
+.footer-line {
+  padding: 30px 0px;
+  color: #fff;
+}
+
+.footer-line a {
+  color: #0CB8B6;
+}
+
+.quick-info li a {
+  color: #fff;
+}
+
+.site-link,
+.site-link:hover,
+.site-link:focus {
+  color: #0cb8b6;
+  text-transform: none;
+}
+
+@media (min-width: 551px) and (max-width: 980px) {}
+
+@media (min-width: 220px) and (max-width: 551px) {
+  .testi-info {
+      margin-bottom: 20px;
+  }
+
+  .marb20 {
+      margin-top: 30px;
+  }
+
+  h2 {
+      font-size: 24px;
+      line-height: 1.2;
+  }
+
+  .section-title {
+      margin-bottom: 30px;
+  }
+
+  .medi-info {
+      border: 0px;
+      border-bottom: 1px solid #fff;
+  }
+
+  .service-info {
+      margin-top: 20px;
+      margin-bottom: 0px;
+  }
+
+  .caption h3 {
+      font-size: 14px;
+  }
+
+  .caption p {
+      font-size: 12px;
+      padding-bottom: 5px;
+  }
+
+  .caption ul li a i {
+      font-size: 14px;
+  }
+
+  .banner-text h1 {
+      font-size: 24px;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
 }
